@@ -4,7 +4,7 @@ require 'mysql2'
 
 server = WEBrick::HTTPServer.new(
   :Port => 8080,
-  :DocumentRoot => File.join(File.dirname(__FILE__), 'html')
+  :DocumentRoot => File.dirname(__FILE__)
 )
 
 trap('INT') { server.shutdown }
